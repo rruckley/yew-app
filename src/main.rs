@@ -6,8 +6,10 @@ struct Video {
     speaker: String,
     url: String,
 }
+
 #[function_component(App)]
 fn app() -> Html {
+
     let videos = vec![
         Video {
             id: 1,
@@ -34,12 +36,9 @@ fn app() -> Html {
             url: "https://youtu.be/PsaFVLr8t4E".to_string(),
         },
     ];
-
     let videos = videos.iter().map(|video| html! {
         <p>{format!("{}: {}", video.speaker, video.title)}</p>
     }).collect::<Html>();
-
-
     html! {
         <>
             <h1>{ "RustConf Explorer" }</h1>
