@@ -2,4 +2,5 @@
 dist/index.html
 dist/yew-app-8f0b615e02b8cd3c_bg.wasm
 dist/yew-app-8f0b615e02b8cd3c.js
+dist/yew*
 Cargo.lock
